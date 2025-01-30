@@ -18,9 +18,10 @@ time.sleep(5)
 
 # Maximize the Spotify window
 pg.hotkey('control','command', 'f')
+time.sleep(1)
 
 # Start playing songs
-pg.click(734,874)
+pg.click(735,894)
 time.sleep(0.5)
 
 
