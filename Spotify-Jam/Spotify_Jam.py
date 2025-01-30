@@ -19,6 +19,11 @@ time.sleep(5)
 # Maximize the Spotify window
 pg.hotkey('control','command', 'f')
 
+# Start playing songs
+pg.click(734,874)
+time.sleep(0.5)
+
+
 #Locating the connect to device option on spotify
 pg.click (1250,912)
 time.sleep(1)
@@ -63,4 +68,8 @@ time.sleep(0.5)
 
 # Click Enter
 pg.hotkey("return")
+time.sleep(0.5)
+
+# Exit whatsapp
+pg.hotkey("command", "q")
 time.sleep(0.5)
