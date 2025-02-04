@@ -3,8 +3,8 @@ import time
 
 # Give yourself a few seconds to switch to the desktop
 for x in range(0, 1):
-    pg.hotkey("command", "space")
-    time.sleep(1.5)
+    pg.hotkey("command")
+    print(f"Switching to desktop in {str(1 - x)} seconds")
 
 # Open Spotify (assuming it's pinned to the taskbar or you can use a keyboard shortcut)
 pg.hotkey("command", "space")
@@ -26,11 +26,11 @@ time.sleep(0.5)
 
 
 #Locating the connect to device option on spotify
-pg.click (1250,912)
+pg.click (1381,64)
 time.sleep(1)
 
 #Locating the create a jam option on spotify
-pg.click (1267,278)
+pg.click (1136,252)
 time.sleep(1)
 
 # Locating the create a jam option on spotify
