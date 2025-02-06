@@ -65,7 +65,7 @@ time.sleep(0.5)
 
 # Click on Searchbar
 pg.click(653,932)
-time.sleep(0.5)
+time.sleep(1)
 
 # Paste the code
 pg.hotkey("command", "v")
@@ -73,7 +73,7 @@ time.sleep(0.5)
 
 # Click Enter
 pg.hotkey("return")
-time.sleep(0.5)
+time.sleep(1)
 
 # Exit whatsapp
 pg.hotkey("command", "q")
