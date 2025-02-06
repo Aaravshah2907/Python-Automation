@@ -1,5 +1,6 @@
 import pyautogui as pg
 import time
+import json
 
 # Give yourself a few seconds to switch to the desktop
 for x in range(0, 1):
@@ -36,7 +37,10 @@ time.sleep(1)
 # Locating the create a jam option on spotify
 # location = pyautogui.click (1312,407)
 # time.sleep(1.2) 
-
+with open('credentials.json') as f:  # Update with the path to your credentials file
+    credentials = json.load(f)
+    shareto = credentials['shareto']
+    
 # Open Whatsapp in full screen
 pg.hotkey("command", "space")
 time.sleep(1)
@@ -51,8 +55,8 @@ time.sleep(1)
 pg.click(204,107)
 time.sleep(0.5)
 
-# Search Jainam Shah
-pg.write('Jainam Shah')
+# Search Name imported from the json file
+pg.write(shareto)
 time.sleep(0.5)
 
 # Click on first option
