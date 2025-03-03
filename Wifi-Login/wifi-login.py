@@ -48,11 +48,4 @@ if __name__ == '__main__':
     # Set up the Chrome driver
     service = webdriver.ChromeService() # Update with the path to your chromedriver
     driver = webdriver.Chrome(service=service, options=chrome_options)
-    internet_check()
-    driver = webdriver.Chrome(service=service, options=chrome_options)
     login()
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-    internet_check()
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-    login()
-    driver.quit()
