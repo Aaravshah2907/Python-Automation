@@ -5,9 +5,9 @@ import json
 # Give yourself a few seconds to switch to the desktop
 for x in range(0, 1):
     pg.hotkey("command")
-    print(f"Switching to desktop in {str(1 - x)} seconds")
+    print(f"{x} seconds.....")
 
-# Open Spotify (assuming it's pinned to the taskbar or you can use a keyboard shortcut)
+# Open Spotify (use a keyboard shortcut)
 pg.hotkey("command", "space")
 time.sleep(0.5)
 pg.write('Spotify.app')  
@@ -15,7 +15,7 @@ time.sleep(0.5)
 pg.press('enter')
 
 # Wait for Spotify to open
-time.sleep(5)
+time.sleep(4)
 
 # Maximize the Spotify window
 pg.hotkey('control','command', 'f')
@@ -25,7 +25,6 @@ time.sleep(1)
 pg.click(735,894)
 time.sleep(0.5)
 
-
 #Locating the connect to device option on spotify
 pg.click (1381,64)
 time.sleep(1)
@@ -34,9 +33,6 @@ time.sleep(1)
 pg.click (1136,252)
 time.sleep(1)
 
-# Locating the create a jam option on spotify
-# location = pyautogui.click (1312,407)
-# time.sleep(1.2) 
 with open('credentials.json') as f:  # Update with the path to your credentials file
     credentials = json.load(f)
     shareto = credentials['shareto']
@@ -47,9 +43,9 @@ time.sleep(1)
 pg.write('whatsapp')  
 time.sleep(1)
 pg.press('enter')
-time.sleep(3)
+time.sleep(5)
 pg.hotkey('fn', 'f')
-time.sleep(1)
+time.sleep(1.5)
 
 # Click on the chat boxCLICK ON SEARCH BUTTON
 pg.click(204,107)
@@ -57,11 +53,11 @@ time.sleep(0.5)
 
 # Search Name imported from the json file
 pg.write(shareto)
-time.sleep(0.5)
+time.sleep(2)
 
 # Click on first option
 pg.click(224,215)
-time.sleep(0.5)
+time.sleep(1)
 
 # Click on Searchbar
 pg.click(653,932)
