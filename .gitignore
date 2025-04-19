@@ -1,1 +1,3 @@
 *.json
+/Wifi-login-v2/creds.py
+/Wifi-login-v2/history_wifi_connection.txt
