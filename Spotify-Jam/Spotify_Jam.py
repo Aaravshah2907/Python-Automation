@@ -48,19 +48,16 @@ pg.hotkey('fn', 'f')
 time.sleep(1.5)
 
 # Click on the chat boxCLICK ON SEARCH BUTTON
-pg.click(204,107)
+pg.hotkey('command', 'n')
 time.sleep(0.5)
+pg.hotkey('tab')
 
 # Search Name imported from the json file
 pg.write(shareto)
-time.sleep(2)
+time.sleep(1.5)
 
 # Click on first option
-pg.click(224,215)
-time.sleep(1)
-
-# Click on Searchbar
-pg.click(653,932)
+pg.click(328,220)
 time.sleep(1)
 
 # Paste the code
